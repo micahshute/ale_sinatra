@@ -1,0 +1,8 @@
+<a href="/pizzas/new">Create a new pizza</a>
+
+<ul>
+    <% @pizzas.each do |pizza| %>
+        <li><a href="/pizzas/<%= pizza.id %>"><%= pizza.name%></a></li>
+
+    <% end %>
+</ul>
